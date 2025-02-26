@@ -61,6 +61,7 @@ body.dark, .cc-container.dark {
     gap: 15px;
   }
   
+<<<<<<< HEAD
   html ul {
     list-style-type: disc; /* Pode ser modificado para outro marcador se preferir */
     padding-left: 40px;    /* Garante um recuo adequado */
@@ -72,6 +73,8 @@ body.dark, .cc-container.dark {
   }
   
 
+=======
+>>>>>>> 2af985e (v1.0.1)
   /* Botões de Navegação – Estilo Extendido */
 .main-nav li a {
     /* Removemos o fundo cheio e usamos borda para um efeito "outline" */
@@ -114,6 +117,21 @@ body.dark, .cc-container.dark {
   }
   
   /* Exemplo de Variáveis (ajuste conforme o seu gosto) */
+<<<<<<< HEAD
+=======
+  :root {
+    --primary-color: #004a80;
+    --secondary-color: #e0e0e0;
+    --accent-color: #ffd1a9;
+    --bg-light: #ffffff;
+    --bg-dark: #1e1e1e;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --border-radius: 8px;
+    --transition: 0.3s ease;
+  }
+  
+>>>>>>> 2af985e (v1.0.1)
 
   .toggle-mode {
     background: none;

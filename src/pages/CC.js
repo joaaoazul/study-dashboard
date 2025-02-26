@@ -21,12 +21,19 @@ const CC = () => {
       {/* Header */}
       <header>
         <h1>ISC2 CC: Study System</h1>
+<<<<<<< HEAD
         <DarkModeToggle darkMode={darkMode} onToggle={handleToggle} />
       </header>
 
       {/* Navegação */}
 
 
+=======
+        <DarkModeToggle />
+      </header>
+
+      {/* Navegação */}
+>>>>>>> 2af985e (v1.0.1)
       <nav className="main-nav">
         <ul>
           <li >
@@ -36,6 +43,7 @@ const CC = () => {
             <a href="#continuidade">Continuidade &amp; DR</a>
           </li>
           <li >
+<<<<<<< HEAD
             <a href="#controle-de-acesso">Controle de Acesso</a>
           </li>
           <li > 
@@ -43,6 +51,15 @@ const CC = () => {
           </li>
           <li>
             <a href="#operacoes-de-seguranca">Operações de Segurança</a>
+=======
+            <a href="#controle">Controle de Acesso</a>
+          </li>
+          <li > 
+            <a href="#redes">Segurança de Redes</a>
+          </li>
+          <li>
+            <a href="#operacoes">Operações de Segurança</a>
+>>>>>>> 2af985e (v1.0.1)
           </li>
         </ul>
       </nav>
