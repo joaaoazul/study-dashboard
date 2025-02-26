@@ -1,5 +1,6 @@
 import React from "react";
 import "./CC.css"; // Estilos específicos para esta página
+import DarkModeToggle from "../components/DarkModeToggle";
 
 const CC = () => {
   return (
@@ -7,22 +8,22 @@ const CC = () => {
       {/* Header */}
       <header>
         <h1>ISC2 CC: Study System</h1>
-        <button className="toggle-mode">Modo Escuro</button>
+        <DarkModeToggle />
       </header>
 
       {/* Navegação */}
-      <nav>
+      <nav className="main-nav">
         <ul>
-          <li>
+          <li >
             <a href="#principios">Princípios de Segurança</a>
           </li>
-          <li>
+          <li >
             <a href="#continuidade">Continuidade &amp; DR</a>
           </li>
-          <li>
+          <li >
             <a href="#controle">Controle de Acesso</a>
           </li>
-          <li>
+          <li > 
             <a href="#redes">Segurança de Redes</a>
           </li>
           <li>
@@ -306,7 +307,7 @@ const CC = () => {
                 A análise qualitativa avalia os riscos com base em critérios subjetivos (como probabilidade e impacto) sem a atribuição de valores numéricos precisos, enquanto a análise quantitativa utiliza dados numéricos para calcular o valor do risco. Ambas as abordagens ajudam a priorizar os riscos e a definir as estratégias de tratamento.
               </p>
               <div className="heat-map-img">
-                <img src="./assets/img/qualitative_risk.png" alt="Risk Assessment Heat Map" />
+                <img src="./qualitative_risk.png" alt="Risk Assessment Heat Map" />
               </div>
               <p>
                 <strong>Exemplo Prático:</strong>
@@ -626,7 +627,6 @@ const CC = () => {
           Voltar ao Início
         </button>
       </div>
-
       {/* Footer */}
       <footer>
         <p>&copy; 2025 joaoDev. Todos os direitos reservados. v1.5.0</p>

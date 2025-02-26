@@ -55,6 +55,74 @@
     font-size: 2rem;
   }
   
+  .main-nav {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .main-nav ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+  }
+  
+  /* Botões de Navegação – Estilo Extendido */
+.main-nav li a {
+    /* Removemos o fundo cheio e usamos borda para um efeito "outline" */
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all var(--transition);
+  }
+  
+  .main-nav li a:hover {
+    background: var(--primary-color);
+    color: var(--text-light);
+    transform: scale(1.05);
+  }
+  
+  /* Ajuste para Dark Mode nos Botões de Nav */
+  body.dark .main-nav li a {
+    border-color: var(--text-light);
+    color: var(--text-light);
+  }
+  
+  body.dark .main-nav li a:hover {
+    background: var(--text-light);
+    color: var(--primary-color);
+  }
+  
+  /* Dark Mode Geral – Certifique-se de que o seu dark mode está efetivamente alternando a classe 'dark' no <body> */
+  body.dark {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+  }
+  
+  /* Se você quiser mais contraste no dark mode para áreas de conteúdo: */
+  body.dark .main-content {
+    background: #2a2a2a;
+  }
+  
+  /* Exemplo de Variáveis (ajuste conforme o seu gosto) */
+  :root {
+    --primary-color: #004a80;
+    --secondary-color: #e0e0e0;
+    --accent-color: #ffd1a9;
+    --bg-light: #ffffff;
+    --bg-dark: #1e1e1e;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --border-radius: 8px;
+    --transition: 0.3s ease;
+  }
+  
+
   .toggle-mode {
     background: none;
     border: 2px solid var(--text-light);
