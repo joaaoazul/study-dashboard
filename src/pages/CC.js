@@ -1,14 +1,27 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./CC.css"; // Estilos específicos para esta página
 import DarkModeToggle from "../components/DarkModeToggle";
 
 const CC = () => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (darkMode) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [darkMode]);
+
+  const handleToggle = () => {
+    setDarkMode(!darkMode);
+  };
   return (
     <div className="cc-container">
       {/* Header */}
       <header>
         <h1>ISC2 CC: Study System</h1>
-
+        <DarkModeToggle darkMode={darkMode} onToggle={handleToggle} />
       </header>
 
       {/* Navegação */}

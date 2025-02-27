@@ -24,9 +24,6 @@ body.dark, .cc-container.dark {
   color: var(--text-light);
 }
 
-
-  
-
   
   /* Container Principal */
   .cc-container {
@@ -117,18 +114,6 @@ body.dark, .cc-container.dark {
   }
   
   /* Exemplo de Variáveis (ajuste conforme o seu gosto) */
-  :root {
-    --primary-color: #004a80;
-    --secondary-color: #e0e0e0;
-    --accent-color: #ffd1a9;
-    --bg-light: #ffffff;
-    --bg-dark: #1e1e1e;
-    --text-light: #ffffff;
-    --text-dark: #333333;
-    --border-radius: 8px;
-    --transition: 0.3s ease;
-  }
-  
 
   .toggle-mode {
     background: none;

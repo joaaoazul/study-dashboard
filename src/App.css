@@ -41,19 +41,36 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
 
-/* Estilos específicos para a página CC */
-.cc-container .main-content {
-  background: #ffffff;
-  color: #333333;
+/* Estilos globais */
+body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode .cc-container .main-content {
-  background: #2a2a2a;
-  color: #e0e0e0;
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Botão de alternância */
+.toggle-mode {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.toggle-mode.dark {
+  background: #444;
+  color: white;
+}
+
+.toggle-mode.light {
+  background: #ddd;
+  color: black;
 }
