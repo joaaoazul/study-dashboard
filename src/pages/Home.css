@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  border: 2px dashed blue; /* Para debugar, mostra o contorno do grid */
+  margin-top: 20px;
 }
 
 .cert-link {
@@ -24,7 +24,6 @@
   max-height: 220px;
   position: relative;
   cursor: pointer;
-  border: 2px solid yellow; /* Adicione uma borda para visualizar o elemento */
 }
 
 .card-image {

@@ -1,20 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DarkModeContext } from "../DarkModeContext";
 
-const DarkModeToggle = ({ darkMode, setDarkMode }) => {
+const DarkModeToggle = () => {
+  const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  if (darkMode === undefined || toggleDarkMode === undefined) {
+    console.log("Dark mode ou toggle estão undefined!");
+  }
   return (
-    <button
-      onClick={() => setDarkMode(!darkMode)}
-      style={{
-        padding: "10px 20px",
-        borderRadius: "5px",
-        border: "none",
-        background: darkMode ? "#444" : "#ddd",
-        color: darkMode ? "#fff" : "#000",
-        cursor: "pointer",
-        marginBottom: "30px", // Aumentado para 30px
-      }}
-    >
-      {darkMode ? "Light Mode" : "Dark Mode"}
+    <button onClick={toggleDarkMode} className="toggle-mode">
+      {darkMode ? "Modo Claro" : "Modo Escuro"}
     </button>
   );
 };

@@ -34,3 +34,26 @@ html, body {
   transition: background 0.3s, color 0.3s;
   overflow-y: auto;
 }
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Estilos específicos para a página CC */
+.cc-container .main-content {
+  background: #ffffff;
+  color: #333333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .cc-container .main-content {
+  background: #2a2a2a;
+  color: #e0e0e0;
+}

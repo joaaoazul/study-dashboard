@@ -8,10 +8,12 @@ const CC = () => {
       {/* Header */}
       <header>
         <h1>ISC2 CC: Study System</h1>
-        <DarkModeToggle />
+
       </header>
 
       {/* Navegação */}
+
+
       <nav className="main-nav">
         <ul>
           <li >
@@ -21,13 +23,13 @@ const CC = () => {
             <a href="#continuidade">Continuidade &amp; DR</a>
           </li>
           <li >
-            <a href="#controle">Controle de Acesso</a>
+            <a href="#controle-de-acesso">Controle de Acesso</a>
           </li>
           <li > 
-            <a href="#redes">Segurança de Redes</a>
+            <a href="#seguranca-de-redes">Segurança de Redes</a>
           </li>
           <li>
-            <a href="#operacoes">Operações de Segurança</a>
+            <a href="#operacoes-de-seguranca">Operações de Segurança</a>
           </li>
         </ul>
       </nav>
@@ -256,8 +258,6 @@ const CC = () => {
                 <strong>Risk Management:</strong>
                 <br />
                 Envolve a aplicação de métodos, políticas e procedimentos para gerenciar riscos, minimizando sua probabilidade e/ou impacto e garantindo a continuidade dos negócios.
-              </p>
-              <p>
                 Profissionais de segurança utilizam seu conhecimento e habilidades para examinar a gestão de riscos operacionais, determinar como usar dados de risco de forma eficaz, trabalhar de maneira colaborativa entre diferentes áreas e relatar informações e descobertas acionáveis para os stakeholders envolvidos. Termos como ameaças, vulnerabilidades e ativos são familiares para a maioria dos profissionais de cibersegurança.
               </p>
               <p>
@@ -558,6 +558,154 @@ const CC = () => {
               </p>
             </article>
           </section>
+
+          {/* Seção: Segurança de Redes e Controle de Acesso */}
+        <section id="controle-de-acesso">
+        <h2>Controle de Acesso</h2>
+
+        <article id="controles-fisicos">
+          <h3>☆✓ Controles Físicos</h3>
+          <p>
+            Os controles físicos englobam medidas estruturais e tecnológicas para prevenir o acesso não autorizado às instalações e ativos. Isso inclui o uso de crachás, sistemas biométricos, fechaduras eletrônicas, sensores de movimento, monitoramento por CFTV, além da segregação de áreas sensíveis, alarmes e barreiras físicas.
+          </p>
+          <p className="note">
+            Nota: Os controles físicos devem ser projetados e mantidos de acordo com as melhores práticas de segurança e normas internacionais.
+          </p>
+        </article>
+
+        <article id="controles-logicos">
+          <h3>☆✓ Controles Lógicos</h3>
+          <p>
+            Os controles lógicos gerenciam o acesso digital a sistemas e informações, utilizando modelos como:
+          </p>
+          <ul>
+            <li>
+              <strong>RBAC (Role-Based Access Control):</strong> onde as permissões são atribuídas com base na função do usuário.
+            </li>
+            <li>
+              <strong>DAC (Discretionary Access Control):</strong> onde o proprietário do recurso determina quem tem acesso.
+            </li>
+            <li>
+              <strong>MAC (Mandatory Access Control):</strong> que impõe regras baseadas em classificações e políticas de segurança definidas pela organização.
+            </li>
+            <li>
+              <strong>ABAC (Attribute-Based Access Control):</strong> que utiliza atributos do usuário e condições para definir permissões.
+            </li>
+          </ul>
+          <p>
+            Mecanismos como autenticação multifator, autorizações dinâmicas e auditorias constantes complementam esses controles, garantindo uma gestão de acesso robusta.
+          </p>
+          <p className="note">
+            Nota: A aplicação dos controles lógicos deve seguir os padrões e diretrizes estabelecidos pela ISC2, com ênfase na redução da superfície de ataque e na manutenção de registros de auditoria.
+          </p>
+        </article>
+
+        <article id="menor-privilegio">
+          <h3>☆✓ Princípio do Menor Privilégio</h3>
+          <p>
+            Esse princípio determina que cada usuário, processo ou sistema receba apenas as permissões estritamente necessárias para a realização de suas funções, evitando acessos excessivos.
+          </p>
+          <p>
+            A aplicação rigorosa do menor privilégio envolve revisões periódicas das permissões, automação na atribuição de acessos e monitoramento contínuo para detectar eventuais excessos, reduzindo assim o risco de comprometimento de dados críticos.
+          </p>
+          <p className="note">
+            Nota: Este princípio é fundamental nas recomendações oficiais da ISC2, ajudando a limitar os danos em caso de violação de segurança.
+          </p>
+        </article>
+      </section>
+
+      {/* Segurança de Redes */}
+      <section id="seguranca-de-redes">
+        <h2>Segurança de Redes</h2>
+
+        <article id="infraestrutura-de-seguranca">
+          <h3>☆✓ Infraestrutura de Segurança</h3>
+          <p>
+            Uma infraestrutura de segurança robusta integra dispositivos e tecnologias como firewalls de próxima geração, VPNs, sistemas de detecção e prevenção de intrusos (IDS/IPS) e segmentação de rede. Tais elementos monitoram, filtram e protegem o tráfego, garantindo que apenas comunicações autorizadas cheguem aos ativos críticos.
+          </p>
+          <p>
+            Soluções de monitoramento contínuo, análise de tráfego e gerenciamento centralizado são essenciais para identificar e mitigar ameaças em tempo real.
+          </p>
+          <p className="note">
+            Nota: A infraestrutura de segurança deve ser planejada de forma holística, considerando tecnologias emergentes e as melhores práticas internacionais.
+          </p>
+        </article>
+
+        <article id="ameacas-e-ataques">
+          <h3>☆✓ Ameaças e Ataques à Rede</h3>
+          <p>
+            Este módulo aborda a identificação de diversas ameaças que podem comprometer a segurança das redes, como:
+          </p>
+          <ul>
+            <li>
+              <strong>Ataques DDoS:</strong> Visam sobrecarregar sistemas e interromper a disponibilidade dos serviços.
+            </li>
+            <li>
+              <strong>Phishing:</strong> Técnicas de engenharia social para obter credenciais e informações sensíveis.
+            </li>
+            <li>
+              <strong>Man-in-the-Middle (MitM):</strong> Interceptação e possível alteração das comunicações entre partes.
+            </li>
+            <li>
+              <strong>Malware e Ransomware:</strong> Softwares maliciosos que exploram vulnerabilidades para infectar sistemas e sequestrar dados.
+            </li>
+          </ul>
+          <p>
+            As diretrizes da ISC2 recomendam uma abordagem em camadas para prevenção, detecção e resposta, combinando tecnologias e políticas para minimizar os riscos.
+          </p>
+          <p className="note">
+            Nota: A análise das ameaças deve ser atualizada constantemente para refletir o cenário dinâmico do ambiente digital.
+          </p>
+        </article>
+
+        <article id="protocolos-seguros">
+          <h3>☆✓ Protocolos Seguros</h3>
+          <p>
+            A implementação de protocolos seguros como TLS e IPSec é essencial para proteger a integridade e confidencialidade dos dados em trânsito. Configurações corretas de certificados digitais e parâmetros robustos de criptografia ajudam a evitar vulnerabilidades.
+          </p>
+          <p className="note">
+            Nota: A utilização de protocolos seguros deve estar alinhada com as diretrizes do curso oficial da ISC2 para comunicações protegidas.
+          </p>
+        </article>
+      </section>
+
+      {/* Operações de Segurança */}
+      <section id="operacoes-de-seguranca">
+        <h2>Operações de Segurança</h2>
+
+        <article id="seguranca-de-dados">
+          <h3>☆✓ Segurança de Dados</h3>
+          <p>
+            Técnicas para proteger informações sensíveis incluem o uso de criptografia para dados em repouso e em trânsito, políticas de prevenção contra perda de dados (DLP) e controle rigoroso de acesso, além do monitoramento contínuo da integridade das informações.
+          </p>
+          <p>
+            A implementação de backups regulares, segmentação de dados e sistemas de recuperação rápida são medidas essenciais para garantir a disponibilidade e resiliência dos ativos.
+          </p>
+          <p className="note">
+            Nota: As estratégias para proteger dados sensíveis seguem as diretrizes da ISC2, enfatizando a confidencialidade, integridade e disponibilidade.
+          </p>
+        </article>
+
+        <article id="endurecimento-do-sistema">
+          <h3>☆✓ Endurecimento do Sistema</h3>
+          <p>
+            O endurecimento do sistema é um processo contínuo que visa reduzir vulnerabilidades e minimizar a superfície de ataque. Isso inclui a remoção de serviços desnecessários, aplicação regular de patches e configurações seguras, além de auditorias e testes de penetração.
+          </p>
+          <p className="note">
+            Nota: As práticas de endurecimento seguem as recomendações do guia oficial da ISC2, integrando-se ao ciclo de desenvolvimento e manutenção dos sistemas.
+          </p>
+        </article>
+
+        <article id="treinamento-em-consciencia">
+          <h3>☆✓ Treinamento em Conscientização de Segurança</h3>
+          <p>
+            Estratégias e iniciativas para educar os usuários sobre boas práticas de segurança são fundamentais. Programas de treinamento que abordem identificação de phishing, engenharia social, uso seguro de dispositivos e simulações de incidentes ajudam a construir uma cultura de segurança.
+          </p>
+          <p className="note">
+            Nota: A capacitação dos colaboradores é essencial para reduzir o erro humano, frequentemente apontado como uma das principais vulnerabilidades exploradas por atacantes.
+          </p>
+        </article>
+      </section>
 
           {/* Seção: Dashboard de Progresso e Tarefas */}
           <section id="dashboard">
